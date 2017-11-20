@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+import requests
+
+
+r = requests.get('https://api.binance.com/api/v1/ticker/allPrices');
+ticker = r.json()
+
+btc = float(ticker[14]['price'])
+eth = float(ticker[15]['price'])
+wtc = float(ticker[23]['price']) * btc
+
+print('Btc: $%.2f' % btc + '   Eth: $%.2f' % eth + '   Wtc: $%.2f' % wtc)
