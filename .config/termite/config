@@ -7,7 +7,7 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = Space Mono for Powerline 18px
+font = Space Mono for Powerline 12px
 
 rollback_lines = 10000i
 search_wrap = true
